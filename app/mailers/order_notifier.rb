@@ -1,0 +1,26 @@
+class OrderNotifier < ActionMailer::Base
+  default from: "denis@johny-lenny.ru"
+
+  # Subject can be set in your I18n file at config/locales/en.yml
+  # with the following lookup:
+  #
+  #   en.order_notifier.received.subject
+  #
+  def received (order)
+    @order = order
+
+    mail( to: order.emails, subject: 'Подтверждение заказа в Pragmatic Store')
+  end
+
+  # Subject can be set in your I18n file at config/locales/en.yml
+  # with the following lookup:
+  #
+  #   en.order_notifier.shipped.subject
+  #
+  def shipped(order)
+    @order = order
+
+
+    mail( to: order.emails, subject: 'Заказ из Pragmatic Store отправлен')
+  end
+end

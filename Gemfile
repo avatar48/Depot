@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
@@ -39,3 +39,12 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'rake','10.4.2'
+
+group :development do
+  gem 'capistrano', '~> 3.5'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
+
+gem 'jquery-ui-rails'
