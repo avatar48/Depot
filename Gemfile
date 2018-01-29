@@ -27,19 +27,19 @@ group :production do
 end
 
 group :development do
-#  gem 'capistrano', '~> 3.1'
-#  gem 'capistrano-rails', '~> 1.1'
-#  gem 'capistrano3-unicorn'
-#  gem 'capistrano-sidekiq'
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano3-unicorn'
+  gem 'capistrano-sidekiq'
   gem 'spring'
   gem 'pry-byebug'
   gem 'annotate'
   gem 'letter_opener'
-    gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
-    gem 'capistrano-rails',   require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
+#    gem 'capistrano',         require: false
+#    gem 'capistrano-rvm',     require: false
+#    gem 'capistrano-rails',   require: false
+#    gem 'capistrano-bundler', require: false
+#    gem 'capistrano3-puma',   require: false
 end
 
 gem 'sitemap_generator'
