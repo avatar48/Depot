@@ -1,5 +1,5 @@
 class OrderNotifier < ActionMailer::Base
-  default from: "denis@johny-lenny.ru"
+  default from: "avatar48@yandex.ru"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

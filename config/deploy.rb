@@ -1,13 +1,13 @@
 # encoding: utf-8
 # config valid only for Capistrano 3
-lock '3.5.0'
+lock '3.10.1'
 
 # Project configuration options
 # ------------------------------
 
-set :application,    'myror'
-set :login,          'denis'
-set :user,           'hosting_denis'
+set :application,    'test'
+set :login,          'avatar48'
+set :user,           'hosting_avatar48'
 
 set :deploy_to,      "/home/#{fetch(:user)}/projects/#{fetch(:application)}"
 set :unicorn_conf,   "/etc/unicorn/#{fetch(:application)}.#{fetch(:login)}.rb"
@@ -32,13 +32,13 @@ set :log_level, :info
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w(bin log tmp/cache tmp/pids vendor/bundle public/system)
+set :linked_dirs, %w(log tmp/cache tmp/pids vendor/bundle public/system)
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
 # Configure RVM
-set :rvm_ruby_version, '2.2'
+set :rvm_ruby_version, '2.3.0'
 
 # You unlikely have to change below this line
 # -----------------------------------------------------------------------------
